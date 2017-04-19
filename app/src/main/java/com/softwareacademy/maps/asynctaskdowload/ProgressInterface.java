@@ -4,7 +4,6 @@ package com.softwareacademy.maps.asynctaskdowload;
  *
  */
 
-public interface ProgressInterface {
-
+public interface ProgressInterface extends ProgressUpdate {
     void setText(String text);
 }

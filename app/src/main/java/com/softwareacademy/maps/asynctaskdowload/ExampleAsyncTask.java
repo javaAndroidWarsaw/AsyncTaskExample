@@ -35,7 +35,7 @@ public class ExampleAsyncTask extends AsyncTask<Void, Integer, Void> {
 
             publishProgress(i);
             Log.d(ASYNC_TASK, textToShow);
-            if(stopFlag){
+            if(isCancelled()){
                 return null;
             }
             try {
